@@ -5,7 +5,7 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #282828;
-	max-width: 31.25rem;
+	/*max-width: 31.25rem;*/
 	margin: 0 auto;
 }
 
@@ -105,6 +105,17 @@ nav a {
 .services a:focus,
 .services a:active {
 	background-color: #234723;
+}
+
+
+@media (min-width: 50em) {
+	.services article {
+		background: #caebff;
+	}
+
+	.services a{
+		background-color: #346270;
+	}
 }
 
 
