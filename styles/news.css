@@ -137,6 +137,9 @@ a:active {
 --------------------------------------------- */
 .site-header {
 	background-color: #ffe6bf;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	/* add flex styles here */
 }
 
@@ -207,6 +210,8 @@ a:active {
 	.site-navigation {
 		padding: 0 1rem;
 		/* add flex styles here */
+		/* flex: 1 1 auto; */
+		flex-grow: 1;
 	}
 
 	.site-navigation ul,
@@ -216,6 +221,7 @@ a:active {
 		/* START - Remove Mobile Menu Styles */
 		position: relative;
 		top: 0;
+		flex-grow: 1;
 		/* END - Remove Mobile Menu Styles  */
 	}
 

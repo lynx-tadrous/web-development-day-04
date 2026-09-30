@@ -83,7 +83,12 @@ a:focus {
 
 /* Header
 --------------------------------------------- */
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
+}
 
 
 /* Main
