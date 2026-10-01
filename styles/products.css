@@ -40,7 +40,6 @@ h6,
 	font-family: Georgia, Times, "Times New Roman", serif;
 	margin: .5em 0;
 	font-size: 1.75rem;
-	color: #282828;
 }
 
 p {
@@ -98,6 +97,7 @@ a:focus {
 	padding: 1rem
 }
 
+.site-name,
 .site-name:visited {
 	color: #282828;
 }
