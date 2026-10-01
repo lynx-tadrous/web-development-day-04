@@ -184,7 +184,66 @@ a:focus {
 }
 
 /* Section: Products */
+.product {
+	margin-bottom: 2rem;
+	border: 1px solid #eeeeee;
+}
 
+.product-image {
+	display: block;
+	width: 100%;
+}
+
+.product-text {
+	padding: 1rem;
+}
+
+.product-name {
+	font-size: 1.375rem;
+	margin: 0;
+}
+
+.product-price {
+	font-size: .875rem;
+	margin: 0 0 1rem;
+}
+
+.product-link,
+.product-link:visited {
+	display: inline-block;
+	padding: .5rem .75rem;
+	font-size: .875rem;
+	background-color: #008000;
+	color: #ffffff;
+}
+
+@media (min-width: 50em) {
+
+	/* sidebar on the left, products on the right (main flex #1) */
+	.section-products {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: flex-start;
+	}
+
+	.products-sidebar {
+		flex: 0 0 20rem;
+	}
+
+	/* cards in rows that wrap (main flex #2) */
+	.products-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	.product {
+		flex: 0 1 15rem;
+		margin-bottom: 0;
+	}
+
+}
 
 
 /* Footer
