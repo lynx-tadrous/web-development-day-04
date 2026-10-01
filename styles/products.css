@@ -35,10 +35,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.site-name  {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	margin: .5em 0;
 	font-size: 1.75rem;
+	color: #282828;
 }
 
 p {
@@ -81,12 +83,57 @@ a:focus {
 	margin: 0 auto;
 }
 
+
+
 /* Header
 --------------------------------------------- */
 .site-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.site-name {
+	font-weight: bold;
+	padding: 1rem
+}
+
+.site-name:visited {
+	color: #282828;
+}
+
+.site-navigation ul {
+	display: none;          
+	list-style: none;       
+	margin: 0;
+	padding: 0;
+}
+
+.menu-toggle {
+	background-color: transparent;  
+	border: 0;
+	padding: 1rem;
+}
+
+@media (min-width: 50em) {
+
+	/* hide the menu button on desktop */
+	.menu-toggle {
+		display: none;
+	}
+
+	/* show the links in a row (header flex #2) */
+	.site-navigation ul {
+		display: flex;
+	}
+
+	.site-navigation a {
+		display: block;
+		padding: 0 1rem;
+		font-family: Georgia, Times, "Times New Roman", serif;
+		font-size: 1.25rem;
+		color: #282828;
+	}
 
 }
 
@@ -127,7 +174,14 @@ a:focus {
 }
 
 /* Section: About */
+.section-about {
+	max-width: 40rem;
+	margin: 2rem auto 3rem;
+}
 
+.section-about h2 {
+	text-align: center;
+}
 
 /* Section: Products */
 
